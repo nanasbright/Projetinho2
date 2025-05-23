@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Calculadora TPI + N2</title>
+  <title>Calculadora notas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="fundo-cor">
@@ -10,17 +10,17 @@
     <h1 class="titulo">Calculadora de Notas</h1>
     <div class="formulario">
       <label>Acertos na TPI:</label>
-      <input type="number" id="acertosTPI" placeholder="Ex: 8">
+      <input type="number" id="acertosTPI" >
 
-      <label>Total de questões da TPI:</label>
-      <input type="number" id="totalTPI" placeholder="Ex: 10">
+      <label>Quantidade questões para tirar 10 na TPI:</label>
+      <input type="number" id="totalTPI">
 
 
       <label>Acertos na n2:</label>
-      <input type="number" id="acertoN2" placeholder="Ex: 20">
+      <input type="number" id="acertoN2">
 
       <label>Total de questões da N2:</label>
-      <input type="number" id="totalN2" placeholder="Ex: 20">
+      <input type="number" id="totalN2">
 
       <button id="calcular">Calcular</button>
     </div>
@@ -52,7 +52,7 @@
      
 
         resultadoDiv.textContent = `Sua média final é ${mediaFinal.toFixed(2)}.`;
-       if (mediaFinal >= 6) {
+       if (mediaFinal >= 7) {
       resultadoDiv.textContent += " Parabéns! Você é inteligente meu bb";
     } else {
       resultadoDiv.textContent += " Ihhhh burrão (te amo engual)";
