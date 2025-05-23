@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pergunta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="content">
+    <div id="pergunta-container">
+      <p>Deseja continuar?</p>
+      <button id="sim">Sim</button>
+      <button id="nao">Não</button>
+      <p></p>
+      <img id="kittybatman" src="imgs/kittybatman.png" alt="Imagem" width="50">
+    </div>
+
+    <div id="erro">
+      <img id="imagemRaiva" src="imgs/monika.png" alt="Imagem de Raiva" width="300" style="display: none;">
+    </div>
+  </div>
+
+  <script>
+    const simButton = document.getElementById("sim");
+    const naoButton = document.getElementById("nao");
+    const perguntaContainer = document.getElementById("pergunta-container");
+    const imagemRaiva = document.getElementById("imagemRaiva");
+
+    simButton.addEventListener("click", function () {
+      // Redireciona para a carta
+      window.location.href = "cartinha/src/index.html";
+    });
+
+    naoButton.addEventListener("click", function () {
+      perguntaContainer.style.display = "none";
+      imagemRaiva.style.display = "block";
+      document.body.style.backgroundImage = "url('imgs/glitch.png')";
+      document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundPosition = "center";
+      document.body.style.backgroundRepeat = "no-repeat";
+
+      setTimeout(function () {
+        imagemRaiva.style.display = "none";
+        perguntaContainer.style.display = "block";
+        document.body.style.backgroundImage = "";
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
