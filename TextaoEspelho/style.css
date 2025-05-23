@@ -1,0 +1,54 @@
+body.fundo-cor {
+  background-color: #fff0f5;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topo-voltar {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.botao-voltar {
+  background-color: #ffb6c1;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #ff8da1;
+}
+
+.card-texto {
+  max-width: 800px;
+  background-color: #fffafc;
+  border: 3px solid #f7cde2;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  text-align: justify;
+}
+
+.conteudo p {
+  color: crimson;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.imagem-final {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}

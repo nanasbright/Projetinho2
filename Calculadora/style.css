@@ -1,0 +1,56 @@
+body.fundo-cor {
+  background-color: #f2dede; /* mesmo fundo usado na cartinha */
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff8c94;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e07b85;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.voltar {
+  margin-top: 30px;
+}
